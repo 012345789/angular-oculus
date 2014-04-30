@@ -28,3 +28,11 @@
   content: "";
   padding: 0;
 }
+
+.main-video {
+  background-color: green;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,1 +1,32 @@
 <p>This is the partial for view 1.</p>
+
+<div ng-controller="MainVideoController">
+
+	<p>Testing Angular Expressions: 1 + 1 = {{1+1}}</p>
+
+	<p>Select a video:</p> <!-- Perhaps(definitely, for dynamic loading) use ng-repeat here -->
+	<p>
+		<a ng-href="#/Video/M7lc1UVf-VE">Video 1</a>
+		<a ng-href="#/Video/npWSI9iu2i0">Video 2</a>
+		<a ng-href="#/Video/yPuZi9xqHfA">Video 3</a>
+	</p>
+
+
+	<!-- change the URL src to ng-src later -->
+	<iframe id="ytplayer" type="text/html" width="640" height="360"
+	src="https://www.youtube.com/embed/M7lc1UVf-VE"
+	frameborder="0" allowfullscreen></iframe>
+
+	<iframe id="ytplayer" type="text/html" width="640" height="360"
+	src="https://www.youtube.com/embed/npWSI9iu2i0"
+	frameborder="0" allowfullscreen></iframe>
+
+	<iframe id="ytplayer" type="text/html" width="640" height="360"
+	src="https://www.youtube.com/embed/yPuZi9xqHfA"
+	frameborder="0" allowfullscreen></iframe>
+
+</div>
+
+<!-- this button will pick a random videoID from the json file or $http.get list of videoIDs -->
+<p class="center"><button>Random video</button></p>
+

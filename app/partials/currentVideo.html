@@ -1,0 +1,16 @@
+<div>
+	<p>Current Video ID: {{video.params.videoID}}</p>
+	<p>Current Video ID2: {{fullVideoLink}}</p>
+
+	<p>fullVideoLink = full link</p>
+	<p>
+		<iframe id="ytplayer" type="text/html" width="640" height="360"
+		ng-src="{{fullVideoLink}}"
+		frameborder="0" allowfullscreen></iframe>
+	</p>
+
+	<p>
+		<a ng-href="https://www.youtube.com/embed/{{videoLink}}">test link</a>
+	</p>
+
+</div>
