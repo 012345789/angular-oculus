@@ -1,4 +1,5 @@
 <div>
+	<!--
 	<p>Current Video ID: {{video.params.videoID}}</p>
 	<p>Current Video ID2: {{fullVideoLink}}</p>
 
@@ -10,7 +11,35 @@
 	</p>
 
 	<p>
-		<a ng-href="https://www.youtube.com/embed/{{videoLink}}">test link</a>
+		<a ng-href="https://www.youtube.com/embed/">test link</a>
 	</p>
+	-->
+
+	<p>before videoList</p>
+
+    <ul class="videos">
+	  <li ng-repeat="video in videoList">
+	    <span>{{video.id.videoId}}</span>
+	  </li>
+	</ul>
+
+	<p>{{prevPageToken}}</p>
+
+	<div ng-repeat="video in videoList" class="animate-container">
+		<!--<iframe class="animate-repeat" id="ytplayer" type="text/html" width="640" height="360" ng-src="https://www.youtube.com/embed/{{video.id.videoId}}" frameborder="0" allowfullscreen></iframe>-->
+		<a ng-href="#"><img ng-src="{{prevVideoThumbnail}}"></a>
+
+		<iframe class="animate-repeat" id="ytplayer" type="text/html" width="640" height="360" ng-src="{{getIframeSrc(video.id.videoId)}}" frameborder="0" allowfullscreen></iframe>
+
+		<a ng-href="#"><img ng-src="{{nextVideoThumbnail}}"></a>
+	</div>
+
+	<p>{{nextPageToken}}</p>
+	<p>{{nextVideoThumbnail}}</p>
+
+	<p>after videoList</p>
+
+	<!-- this button will pick a random videoID from the json file or $http.get list of videoIDs -->
+	<p class="center"><button>Random video</button></p>
 
 </div>
