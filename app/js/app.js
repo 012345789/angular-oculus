@@ -21,19 +21,3 @@ config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', function(
     'https://www.youtube.com/**']);
   //$locationProvider.html5Mode(true);
 }]);//.
-// directive('youtubePlayer', function($sce) {
-//   return {
-//     restrict: 'EA',
-//     scope: {videoCode: '='},
-//     replace: true,
-//     templateUrl: 'partials/currentVideo.html',
-//     link: function(scope) {
-//       scope.$watch('videoCode', function (newVal) {
-//         if (newVal) {
-//           scope.videoLink = $sce.trustAsResource("newVal");
-//         }
-//       });
-//     }
-//   };
-// });
-

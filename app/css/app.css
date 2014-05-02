@@ -37,6 +37,11 @@
   text-align: center;
 }
 
+.thumbnail {
+  cursor: pointer; 
+  cursor: hand;
+}
+
 /*.animate-repeat.ng-move,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {
