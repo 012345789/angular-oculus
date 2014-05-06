@@ -1,7 +1,5 @@
 <div>
 
-	<p>before videoList</p>
-
 	<div ng-repeat="video in videoList" class="animate-container">
 
 		<p>{{video.id.videoId}}</p>
@@ -13,8 +11,6 @@
 		<img ng-src="{{nextVideoThumbnail}}" ng-click="dynamicYoutubeLink(nextPageToken)" class="thumbnail">
 		
 	</div>
-
-	<p>after videoList</p>
 
 	<!-- this button will pick a random videoID from the json file or $http.get list of videoIDs -->
 	<p class="center"><button>Random video</button></p>
