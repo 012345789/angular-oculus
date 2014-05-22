@@ -46,7 +46,7 @@
     "shelljs": "~0.2.6",
     "requirejs": "~2.1.11",
     "logfmt": "~1.1.2",
-    "express": "~4.1.1"
+    "express": "~4.1.2"
   },
   "keywords": [
     "Oculus",
