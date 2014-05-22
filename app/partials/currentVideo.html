@@ -1,14 +1,14 @@
 <div>
 
-	<div ng-repeat="video in videoList" class="animate-container">
+	<div ng-repeat="video in videoList" class="animate-container center">
 
 		<p>{{video.id.videoId}}</p>
 
-		<img ng-src="{{prevVideoThumbnail}}" ng-click="dynamicYoutubeLink(prevPageToken)" class="thumbnail">
+		<img ng-src="{{prevVideoThumbnail}}" ng-click="dynamicYoutubeLink(prevPageToken)" class="thumbnail" title="{{prevVideoTitle}}">
 
 		<iframe class="animate-repeat" id="ytplayer" type="text/html" width="640" height="360" ng-src="{{getIframeSrc(video.id.videoId)}}" frameborder="0" allowfullscreen></iframe>
 
-		<img ng-src="{{nextVideoThumbnail}}" ng-click="dynamicYoutubeLink(nextPageToken)" class="thumbnail">
+		<img ng-src="{{nextVideoThumbnail}}" ng-click="dynamicYoutubeLink(nextPageToken)" class="thumbnail" title="{{nextVideoTitle}}">
 		
 	</div>
 

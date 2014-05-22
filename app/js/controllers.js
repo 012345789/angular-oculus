@@ -33,9 +33,11 @@ angular.module('myApp.controllers', [])
         $scope.prevPageToken = data.prevPageToken;
         $http.get('https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=oculusvr&maxResults=1&pageToken=' + $scope.nextPageToken + '&key=' + apiKey).success(function(data) {
           $scope.nextVideoThumbnail = data.items[0].snippet.thumbnails.default.url;
+          $scope.nextVideoTitle = data.items[0].snippet.title;
         });
         $http.get('https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=oculusvr&maxResults=1&pageToken=' + $scope.prevPageToken + '&key=' + apiKey).success(function(data) {
           $scope.prevVideoThumbnail = data.items[0].snippet.thumbnails.default.url;
+          $scope.prevVideoTitle = data.items[0].snippet.title;
         });
       });
     };

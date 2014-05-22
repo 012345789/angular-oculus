@@ -20,4 +20,4 @@ config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', function(
     'self',
     'https://www.youtube.com/**']);
   //$locationProvider.html5Mode(true);
-}]);//.
+}]);
