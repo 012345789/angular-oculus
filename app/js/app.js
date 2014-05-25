@@ -19,5 +19,5 @@ config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', function(
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
     'https://www.youtube.com/**']);
-  //$locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(true);
 }]);

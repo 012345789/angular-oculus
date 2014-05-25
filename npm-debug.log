@@ -1,20 +1,26 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'test' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
 2 info using npm@1.4.9
 3 info using node@v0.11.14-pre
-4 error Failed to parse json
-4 error Unexpected token /
-5 error File: /home/g4/Desktop/code/angular-oculus/package.json
-6 error Failed to parse package.json data.
-6 error package.json must be actual JSON, not just JavaScript.
-6 error
-6 error This is not a bug in npm.
-6 error Tell the package author to fix their package.json file. JSON.parse
-7 error System Linux 3.11.0-20-generic
-8 error command "/usr/local/bin/node" "/usr/local/bin/npm" "test"
-9 error cwd /home/g4/Desktop/code/angular-oculus
-10 error node -v v0.11.14-pre
-11 error npm -v 1.4.9
-12 error file /home/g4/Desktop/code/angular-oculus/package.json
-13 error code EJSONPARSE
-14 verbose exit [ 1, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart angular-oculus@0.0.0
+6 info start angular-oculus@0.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info angular-oculus@0.0.0 Failed to exec start script
+9 error angular-oculus@0.0.0 start: `node web.js`
+9 error Exit status 1
+10 error Failed at the angular-oculus@0.0.0 start script.
+10 error This is most likely a problem with the angular-oculus package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     node web.js
+10 error You can get their info via:
+10 error     npm owner ls angular-oculus
+10 error There is likely additional logging output above.
+11 error System Linux 3.11.0-20-generic
+12 error command "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+13 error cwd /home/g4/Desktop/code/angular-oculus
+14 error node -v v0.11.14-pre
+15 error npm -v 1.4.9
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]
