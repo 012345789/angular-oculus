@@ -15,6 +15,8 @@ angular.module('myApp.controllers', [])
     this.name = "VideoController";
     this.params = $routeParams;
     var apiKey = 'AIzaSyDy4TuYNtqRGCENOikEs-20m3zBWw0yE3Q'; //this key is unique to my IP address. if you need to test this on your computer, please give me your IP address so I can allow you access
+    var herokuKey = 'AIzaSyBkMaXiJH6ziTI05fR0wDyRn5N7qGMqGHU';
+    apiKey = herokuKey;
     $scope.dynamicToken = ''; //initializes as an empty string. Meaning it starts at pageToken = none, resulting in first page of search results
 
     $scope.dynamicYoutubeLink = function(pageToken) {
