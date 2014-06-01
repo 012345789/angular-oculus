@@ -2,17 +2,21 @@
 
 	<div ng-repeat="video in videoList" class="animate-container center">
 
-		<p>{{video.id.videoId}}</p>
+		<p>{{video.snippet.title}}</p>
+		<p>by {{video.snippet.channelTitle}}</p>
 
-		<img ng-src="{{prevVideoThumbnail}}" ng-click="dynamicYoutubeLink(prevPageToken)" class="thumbnail" title="{{prevVideoTitle}}">
+		<img ng-src="{{prevVideoThumbnail != null && prevVideoThumbnail || 'img/video_not_available.png'}}" ng-click="dynamicYoutubeLink(prevPageToken)" class="thumbnail" title="{{prevVideoTitle}}" >
 
 		<iframe class="animate-repeat" id="ytplayer" type="text/html" width="640" height="360" ng-src="{{getIframeSrc(video.id.videoId)}}" frameborder="0" allowfullscreen></iframe>
 
-		<img ng-src="{{nextVideoThumbnail}}" ng-click="dynamicYoutubeLink(nextPageToken)" class="thumbnail" title="{{nextVideoTitle}}">
+		<img ng-src="{{nextVideoThumbnail != null && nextVideoThumbnail || 'img/video_not_available.png'}}" ng-click="dynamicYoutubeLink(nextPageToken)" class="thumbnail" title="{{nextVideoTitle}}">
 		
 	</div>
 
 	<!-- this button will pick a random videoID from the json file or $http.get list of videoIDs -->
+	<p class="center">Show me videos about
+		<select ng-model="query" ng-options="query for query in searchQueries" ng-change="getVideo()"></select>
+	</p>
 	<p class="center"><button>Random video</button></p>
 
 </div>
