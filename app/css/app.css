@@ -42,6 +42,26 @@
   cursor: hand;
 }
 
+.header {
+  background-color: #e0e0e0;
+  font-weight: 700;
+  font-size: 17px;
+  list-style: none;
+  font-family: 'Cabin', Arial, sans-serif;
+  clear: both;
+  /*line-height: 1.3;*/
+  position: absolute;
+  width: 100%;
+  margin-top: -16px;
+}
+
+.header-links {
+  padding: 3px 12px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
 /*.animate-repeat.ng-move,
 .animate-repeat.ng-enter,
 .animate-repeat.ng-leave {

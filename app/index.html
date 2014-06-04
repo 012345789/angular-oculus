@@ -7,10 +7,21 @@
 </head>
 <body>
 
-  <ul class="menu">
-    <li><a ng-href="#/view1">view1</a></li>
+  <!-- <ul class="menu">
+    <li><a ng-href="#/view1"><img ng-src="img/oculus_logo.png"></a></li>
     <li><a ng-href="#/currentVideo.html">currentVideo</a></li>
-  </ul>
+  </ul> -->
+
+  <nav class="header">
+    <a href="/video"><img ng-src="img/oculus_logo.png"></a>
+    <a href="#" class="header-links">Order</a>
+    <a href="#" class="header-links">Products</a>
+    <a href="#" class="header-links">Developer</a>
+    <a href="#" class="header-links">News</a>
+    <a href="#" class="header-links">Forums</a>
+    <a href="#" class="header-links">Support</a>
+    <a href="#" class="header-links">Company</a>
+  </nav>
 
   <div ng-view class="main-video"></div>
 
