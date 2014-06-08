@@ -31,6 +31,7 @@
 
 .main-video {
   background-color: green;
+  margin-top: -8px;
 }
 
 .center {
@@ -48,19 +49,80 @@
   font-size: 17px;
   list-style: none;
   font-family: 'Cabin', Arial, sans-serif;
-  clear: both;
   /*line-height: 1.3;*/
-  position: absolute;
+  /*position: relative;*/
   width: 100%;
-  margin-top: -16px;
+  margin-top: -8px;
+  text-align: center;
+}
+
+.logo {
+  margin-left: 10px;
 }
 
 .header-links {
   padding: 3px 12px;
-  padding-bottom: 15px;
   text-decoration: none;
   margin-top: 5px;
+  /*clear: both;*/
+  text-align: center;
+  bottom: 24px;
+  position: relative;
+  color: #333;
 }
+.header-links:hover {
+    color: #fff;
+    background-color: #70bde7;
+    border-radius: 3px;
+}
+
+nav.header ul li {
+  position: relative;
+  display: inline;
+  vertical-align: middle;
+}
+
+nav.header ul li > ul.drop-down-menu {
+  position: absolute;
+  list-style-type: none;
+  float: left;
+  display: inline-block;
+  text-align: left;
+  left: -13px;
+  top: 0px;
+  text-decoration: none;
+  padding-left: 13px;
+  min-width: 150px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+nav.header ul li > ul.drop-down-menu > li {
+  display: block;
+  padding: 5px 0px 5px 3px;
+  z-index: 2;
+  background-color: white;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+ul.drop-down-menu li a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: #333;
+}
+
+ul.drop-down-menu {
+  border-radius: 3px;
+}
+
+.round-bottom {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/*ul.drop-down-menu li:hover > ul {
+  display: block;
+}*/
 
 /*.animate-repeat.ng-move,
 .animate-repeat.ng-enter,

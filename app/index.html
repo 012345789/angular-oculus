@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Video Stream</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link href="//fonts.googleapis.com/css?family=Cabin:400,700,400italic" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -13,14 +14,61 @@
   </ul> -->
 
   <nav class="header">
-    <a href="/video"><img ng-src="img/oculus_logo.png"></a>
-    <a href="#" class="header-links">Order</a>
-    <a href="#" class="header-links">Products</a>
-    <a href="#" class="header-links">Developer</a>
-    <a href="#" class="header-links">News</a>
-    <a href="#" class="header-links">Forums</a>
-    <a href="#" class="header-links">Support</a>
-    <a href="#" class="header-links">Company</a>
+    <ul>
+      <li>
+        <a href="/video"><img ng-src="img/oculus_logo.png" class="logo"></a>
+      </li>
+      <li>
+        <a href="#" class="header-links">Order</a>
+          <ul class="drop-down-menu">
+            <li><a href="#">Development Kit 2</a></li>
+            <li><a href="#">Development Kit 1</a></li>
+            <li><a href="#">Latency Tester</a></li>
+            <li class="round-bottom"><a href="#">Order information</a></li>
+          </ul>
+      </li>
+      <li>
+        <a href="#" class="header-links">Products</a>
+          <ul class="drop-down-menu">
+            <li><a href="#">Development Kit 2</a></li>
+            <li class="round-bottom"><a href="#">Oculus Rift</a></li>
+          </ul>
+      </li>
+      <li>
+        <a href="#" class="header-links">Share</a>
+      </li>
+      <li>
+        <a href="#" class="header-links">Developer</a>
+      </li>
+      <li>
+        <a href="#" class="header-links">News</a>
+        <ul class="drop-down-menu">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Steve LaValle</a></li>
+          <li class="round-bottom"><a href="#">Tom Forsyth</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="header-links">Forums</a>
+      </li>
+      <li>
+        <a href="#" class="header-links">Support</a>
+        <ul class="drop-down-menu">
+          <li class="round-bottom"><a href="#">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="header-links">Company</a>
+        <ul class="drop-down-menu">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">People</a></li>
+          <li class="round-bottom"><a href="#">Careers</a></li>
+        </ul>
+      </li>
+      </ul>
   </nav>
 
   <div ng-view class="main-video"></div>
