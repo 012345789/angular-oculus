@@ -16,7 +16,7 @@ angular.module('myApp.controllers', [])
     this.params = $routeParams;
     var apiKey = 'AIzaSyDy4TuYNtqRGCENOikEs-20m3zBWw0yE3Q'; //this key is unique to my IP address. It is used for testing in development mode. If you need to test this on your computer, please give me your IP address so I can allow you access or you can replace the key with your own generated key.
     var herokuKey = 'AIzaSyBkMaXiJH6ziTI05fR0wDyRn5N7qGMqGHU'; //this key is specifc for herokuapp.com domains
-    //apiKey = herokuKey; //comment this line out when development mode. uncomment it when deploying/testing on Heroku
+    apiKey = herokuKey; //comment this line out when development mode. uncomment it when deploying/testing on Heroku
     $scope.dynamicToken = 'CAEQAA'; //initializes as an empty string. Meaning it starts at pageToken = none, resulting in first page of search results
 
     $scope.searchQueries = ["OculusVR", "Virtual Reality", "Oculus Headset"];
