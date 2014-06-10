@@ -138,6 +138,47 @@ ul.drop-down-menu {
   border-bottom-left-radius: 3px;
 }
 
+.footer {
+  background-color: #404040;
+  font-family: 'Cabin', Arial, sans-serif;
+  color: #fff;
+}
+
+.footer nav div {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+}
+
+.footer a:hover {
+  color: #999;
+}
+
+.footer-links-container {
+  vertical-align: middle;
+}
+
+.subscribe {
+  display: block;
+  float: right;
+}
+
+.post-footer {
+  float: left;
+  display: inline-block;
+  background-color: #404040;
+}
+
+.icon-container {
+  float: right;
+}
+
 /*ul.drop-down-menu li:hover > ul {
   display: block;
 }*/
