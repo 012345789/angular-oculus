@@ -22,6 +22,8 @@ angular.module('myApp.controllers', [])
     $scope.searchQueries = ["OculusVR", "Virtual Reality", "Oculus Headset"];
     $scope.query = "OculusVR";
 
+    // test adding a line. push to heroku
+
     $scope.dynamicYoutubeLink = function (pageToken) {
       if(pageToken) {
         $scope.dynamicToken = pageToken;
